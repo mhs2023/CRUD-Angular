@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": "7056",
+      "Name": "Harami Etor",
+      "gridRadios": "thirdGender",
+      "Email": "harama@gmail.com",
+      "Password": "123",
+      "Address": "123",
+      "City": "123",
+      "Division": "Chittagong",
+      "Zip": "1000"
+    },
+    {
+      "id": "be31",
+      "Name": "Hanee Boro Kutta",
+      "gridRadios": "female",
+      "Email": "harami@gmail.com",
+      "Password": "123",
+      "Address": "123",
+      "City": "123",
+      "Division": "Dhaka",
+      "Zip": "12100"
+    }
+  ]
+}

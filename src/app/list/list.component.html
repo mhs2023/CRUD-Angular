@@ -1,0 +1,40 @@
+
+<div class="container">
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">Division</th>
+        <th scope="col">Zip</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of applicantList">
+        <th>{{post.id}}</th>
+        <th>{{post.Name}}</th>
+        <td>{{post.gridRadios}}</td>
+        <td>{{post.Email}}</td>
+        <td>{{post.Password}}</td>
+        <th>{{post.Address}}</th>
+        <td>{{post.City}}</td>
+        <td>{{post.Division}}</td>
+        <td>{{post.Zip}}</td>
+        <td>
+          <a class="btn btn-primary" style="margin-right: 5px;" [routerLink]="['/edit', post.id]">Edit</a>
+
+          <button type="button" class="btn btn-danger" (click)="delete(post.id)">Delete</button>
+            
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+</div>

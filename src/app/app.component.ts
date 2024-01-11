@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'y';
+
+  name = "Mehedi";
+  Country = "Bangladesh";
+  Salary = 25000000;
+  active = true;
+  
 }
