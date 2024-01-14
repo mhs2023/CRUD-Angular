@@ -9,6 +9,10 @@ import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewComponent } from './components/view/view.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     CreateComponent,
     ListComponent,
-    EditComponent
+    EditComponent,
+    ViewComponent,
+    LoginComponent,
+    SignUpComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

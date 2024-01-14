@@ -4,9 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { CreateComponent } from './create/create.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginComponent },
+  { path: 'sign-up', component: SignUpComponent},
+  { path: 'log-in', component: LoginComponent},
   { path: 'home', component: HomeComponent },
   { path: 'create', component: CreateComponent },
   { path: 'list', component: ListComponent },

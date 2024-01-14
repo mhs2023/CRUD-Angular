@@ -3,6 +3,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Applicant } from '../model/Applicant';
 import { RestApiService } from '../service/rest-api.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-create',
@@ -10,9 +11,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent implements OnInit {
-  constructor(public apiService: RestApiService, private router: Router) { }
+  constructor(public apiService: RestApiService, private router: Router, public authService: AuthService) { }
 
   ngOnInit(): void {
+    this.authService.isLogin();
   }
 
 

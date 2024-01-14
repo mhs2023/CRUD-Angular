@@ -1,26 +1,44 @@
 {
   "posts": [
     {
-      "id": "7056",
-      "Name": "Harami Etor",
-      "gridRadios": "thirdGender",
-      "Email": "harama@gmail.com",
-      "Password": "123",
-      "Address": "123",
-      "City": "123",
-      "Division": "Chittagong",
-      "Zip": "1000"
+      "id": "40f7",
+      "Name": "Mehedi Hasan",
+      "gridRadios": "male",
+      "Email": "test@gmail.com",
+      "Password": "123456789",
+      "Address": "Mirpur",
+      "City": "Dhaka",
+      "Division": "Dhaka",
+      "Zip": "1216"
     },
     {
-      "id": "be31",
-      "Name": "Hanee Boro Kutta",
+      "id": "40a6",
+      "Name": "Hanee Harami",
       "gridRadios": "female",
       "Email": "harami@gmail.com",
-      "Password": "123",
-      "Address": "123",
-      "City": "123",
+      "Password": "123456",
+      "Address": "Gandaria",
+      "City": "Dhaka",
       "Division": "Dhaka",
-      "Zip": "12100"
+      "Zip": "1200"
+    }
+  ],
+  "auth": [
+    {
+      "id": "6501",
+      "inputFirstName": "mehedi",
+      "inputLastName": "hasan",
+      "inputEmail": "ashbh@fjnhjn.com",
+      "inputPhoneNumber": "iuyhuihjiojm",
+      "inputPassword": "nhouhjouij"
+    },
+    {
+      "id": "1f03",
+      "inputFirstName": "meehedi",
+      "inputLastName": "hasan",
+      "inputEmail": "mh.ju1803@gmail.com",
+      "inputPhoneNumber": "01925111043",
+      "inputPassword": "Iamnoone"
     }
   ]
 }

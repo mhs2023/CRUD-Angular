@@ -1,16 +1,16 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Applicant } from './../model/Applicant';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Applicant } from '../model/Applicant';
+import { Route, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
-export class RestApiService {
+export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
-  private apiURL = "http://localhost:3000/posts";
+  private apiURL = "http://localhost:3000/auth";
 
   httpOptions = {
     headers: new HttpHeaders(
@@ -41,8 +41,11 @@ export class RestApiService {
     return this.http.put(this.apiURL+"/" + applicant.id, applicant);
   }
 
-  private messageSource = new BehaviorSubject('true');
-  currentMessage = this.messageSource.asObservable();
+  isLogin() {
 
-  changeMessage(message: string) {this.messageSource.next(message)}
+    let login = localStorage.getItem("isLogin");
+    if (login !== "true") {
+      this.router.navigateByUrl('/log-in');
+    } 
+  }
 }
