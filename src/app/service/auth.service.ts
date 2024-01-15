@@ -44,8 +44,13 @@ export class AuthService {
   isLogin() {
 
     let login = localStorage.getItem("isLogin");
+    let role = localStorage.getItem("role");
     if (login !== "true") {
       this.router.navigateByUrl('/log-in');
-    } 
+    } else {
+      if (role == "admin"){
+        this.router.navigateByUrl('/create');
+      }
+    }
   }
 }

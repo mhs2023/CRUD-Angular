@@ -25,20 +25,40 @@
   ],
   "auth": [
     {
-      "id": "6501",
-      "inputFirstName": "mehedi",
-      "inputLastName": "hasan",
-      "inputEmail": "ashbh@fjnhjn.com",
-      "inputPhoneNumber": "iuyhuihjiojm",
-      "inputPassword": "nhouhjouij"
-    },
-    {
-      "id": "1f03",
-      "inputFirstName": "meehedi",
-      "inputLastName": "hasan",
+      "id": "2a5c",
+      "inputFirstName": "Mehedi",
+      "inputLastName": "Hasan",
       "inputEmail": "mh.ju1803@gmail.com",
       "inputPhoneNumber": "01925111043",
-      "inputPassword": "Iamnoone"
+      "inputPassword": "123456",
+      "role": "employee"
+    },
+    {
+      "id": "3357",
+      "inputFirstName": "Umme",
+      "inputLastName": "Hanee",
+      "inputEmail": "hanee@gmail.com",
+      "inputPhoneNumber": "019222",
+      "inputPassword": "123",
+      "role": "employee"
+    },
+    {
+      "id": "6e54",
+      "inputFirstName": "Admin",
+      "inputLastName": "yahoo",
+      "inputEmail": "admin@gmail.com",
+      "inputPhoneNumber": "01332",
+      "inputPassword": "1234567",
+      "role": "admin"
+    },
+    {
+      "id": "131d",
+      "inputFirstName": "Sharif",
+      "inputLastName": "Khan",
+      "inputEmail": "sharif@gmail.com",
+      "inputPhoneNumber": "01234567",
+      "inputPassword": "01234567",
+      "role": "employee"
     }
   ]
 }

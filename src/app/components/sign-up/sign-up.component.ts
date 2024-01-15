@@ -15,7 +15,8 @@ export class SignUpComponent {
     inputLastName: new FormControl(''),
     inputEmail: new FormControl(''),
     inputPhoneNumber: new FormControl(''),
-    inputPassword: new FormControl('')
+    inputPassword: new FormControl(''),
+    role: new FormControl("employee")
   });
 
 
@@ -23,7 +24,6 @@ export class SignUpComponent {
 
 
   onSub() {
-
     this.apiService.addData(this.loginForm.value).subscribe((res: any) => {
       this.router.navigateByUrl('/log-in');
     })

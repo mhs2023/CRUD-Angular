@@ -15,13 +15,16 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLogin();
+    
   }
   isLogin() {
 
     let login = localStorage.getItem("isLogin");
     if (login !== "true") {
       this.router.navigateByUrl('/log-in');
-    } 
+    } else {
+      this.router.navigateByUrl('/home');
+    }
   }
 
   loginForm: FormGroup = new FormGroup({
@@ -41,7 +44,8 @@ export class LoginComponent implements OnInit {
       for (let index = 0; index < this.authList.length; index++) {
         if (this.loginForm.value.inputUserName == this.authList[index].inputEmail && this.loginForm.value.inputPassword == this.authList[index].inputPassword) {
           localStorage.setItem("isLogin", "true");
-          localStorage.setItem("username", this.loginForm.value.username)
+          localStorage.setItem("email", this.authList[index].inputEmail);
+          localStorage.setItem("role", this.authList[index].role);
           flag = true;
         }
       }
@@ -53,11 +57,20 @@ export class LoginComponent implements OnInit {
       } else {
         alert("Incorrect UserName Or Password!")
       }
+
+      
     });
 
 
 
 
   }
+
+
+
+
+ 
+    
+  
 
 }
