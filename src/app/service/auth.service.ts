@@ -48,7 +48,7 @@ export class AuthService {
     if (login !== "true") {
       this.router.navigateByUrl('/log-in');
     } else {
-      if (role == "admin"){
+      if (role ==  "admin"){
         this.router.navigateByUrl('/create');
       }
     }
